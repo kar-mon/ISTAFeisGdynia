@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+.hero-bg{
+    background-color: #00963c; /* yellow #eba704 */
+    /*background-image:  url('../images/bg.jpg'); */
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding-bottom: 4em;
+}
+
+header {
+    padding: 1em 0;
+}
+
+section {
+margin: 0 1em;
+}
+
+h1{
+    font-size: 2.5rem;
+    margin: 2em 0 1.2em;
+}
+
+h1 span {
+    text-transform: uppercase;
+    display: block;
+    font-size: 1.4rem;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-bg p {
+    margin: 0 0 1em;
+}
+
+.gdynia{
+    margin: 0;
+}
+
+.gdynia p{
+    font-weight: normal;
+    line-height: 2em;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    text-transform: uppercase;
+    position: relative;
+}
+
+
+/*---Media Queries --*/
+
+@media (min-width: 730px) {
+
+}
+
+section {
+    margin: 0 4em;
+}
+
+
+@media (min-width: 930px){
+    .hero-bg {
+        text-align: left;
+    }
+
+    .hero-bg p {
+        margin: 0 0 3em;
+    }
+
+    .hero-bg section {
+        width: 65%;
+    }
+
+    .hero-bg {
+        margin-bottom: 0;
+    }
+
+    section.gdynia {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: "images content"; /* setting the order of the columns */
+    }
+    .right-col {
+        grid-area: content;
+        padding: 0 10%;
+        text-align: left;
+        align-self: center;
+    }
+
+    .carouselFeis {
+        grid-area: images;
+    }
+
+    h2 {
+        margin: 0;
+    }
+}
+} 
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+transition: -webkit-transform 0.5s ease;
+transition: transform 0.5s ease;
+transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+-webkit-backface-visibility: visible;
+backface-visibility: visible;
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+
+
